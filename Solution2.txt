@@ -1,0 +1,14 @@
+Man -> 1 min
+Woman -> 2 min
+Uncle -> 5 min
+Grandpa -> 8 min
+
+จับคู่ คนที่ใช้เวลาเดินมากสุด คู่กับ คนที่ใช้เวลาเดินน้อยสุด เพื่อที่ round trip ของการเดินข้ามสะพาน จะได้ใช้เวลาน้อยสุด (ไปช้า กลับเร็ว)
+Man, Woman, Uncle, Grandpa ------------------
+Woman, Uncle --------8 min----------> Man, Grandpa
+Woman, Uncle ,Man <--------1 min---------- Grandpa
+Woman --------5 min----------> Man, Uncle, Grandpa
+Woman, Man <--------1 min---------- Uncle, Grandpa
+--------2 min----------> Man,Woman, Uncle, Grandpa
+
+8+1+5+1+2 = 17 min
